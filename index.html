@@ -47,7 +47,23 @@
         <h3>Logo HTML 5</h3>
         <img src="img/html.png" alt="HTML 5 Logo">
         <p>you can also watch the video <i>below</i></p>
-        <video src="https://www.youtube.com/watch?v=CgJqd1h4-a4"></video>
+      
+        
+        <video controls width="500" height="400"
+            autoplay loop muted
+            poster="html.png">
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+        <p>Your browser doesn't support HTML video. Here is a <a href="video/video.mp4">link to the video</a> instead.</p>
+        </video>
+
+        <p>you can also listen an audio <i>below</i> </p>
+        
+        <audio controls>
+            <source src="audio/audio.mp3" type="audio/mp3">
+            <source src="audio/audio.ogg" type="audio/ogg">
+            <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio/audio.mp3">link to the audio</a> instead.</p>
+        </audio>
     </section>
 </body>
 </html>
