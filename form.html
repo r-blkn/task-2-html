@@ -19,11 +19,131 @@
 		</nav>
 	</header>
 
-    <main>
-        <form method="POST" action="https://formspree.io/xwkpvnle">
-            
-        </form>
-    </main>
+	<main>
+		<form method="POST" action="https://formspree.io/xwkpvnle">
+			<p>
+				<label for="text">
+                    Name:<input type="text" id="text" placeholder="Name" required>
+                </label>
+			</p>
+			<p>
+				<label for="mail">
+                    Email: <input type="email" id="mail" placeholder="Email" required>
+                </label>
+			</p>
+			<p>
+				<label for="tel">
+                    Phone: <input type="tel" id="tel" placeholder="Phone number" required>
+                </label>
+			</p>
+			<!-- <p>
+                <label for="date"></label>
+                    Date of birth: <input type="date" id="date"
+                        value="2018-07-22"
+                        min="1940-01-01">
+            </p>  do not support at Safari and Internet Explorer-->
+
+			<p>
+				<label for="url">
+                Your website: <input type="url" id="url" placeholder="Your website">
+                </label>
+			</p>
+			<p>
+				<label for="comment">
+                Your comment: <textarea id="comment"></textarea>
+                </label>
+			</p>
+
+			<fieldset>
+				<legend>Select a gender </legend>
+				<p>
+					<input type="radio" name="gender" id="gender_1" value="female">
+					<label for="gender_1">Female</label>
+				</p>
+				<p>
+					<input type="radio" name="gender" id="gender_2" value="male">
+					<label for="gender_2">Male</label>
+				</p>
+				<p>
+					<input type="radio" name="gender" id="gender_3" value="others">
+					<label for="gender_3">Others</label>
+				</p>
+			</fieldset>
+
+
+			<h4>Select status:</h4>
+			<select id="multi" name="multi" multiple>
+                <option>Student</option>
+                <option>Unemployed</option>
+                <option>Retired</option>
+                <option>Working</option>
+            </select>
+
+			<br>
+			<h4>Select favourite car:</h4>
+
+			<table>
+				<tr>
+					<th>Not electro car</th>
+					<th>Electro car</th>
+				</tr>
+				<tr>
+					<th>
+						<table id="not electro">
+							<tr>
+								<th>BMW</th>
+								<th>Mersedes</th>
+								<th>Porshe</th>
+							</tr>
+						</table>
+					</th>
+					<th>
+						<table id="electro">
+							<tr>
+								<th>Tesla</th>
+								<th>Hundai</th>
+							</tr>
+						</table>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<table id="select_car">
+							<tr>
+								<th><input type="checkbox" name="cars" id="bmw" value="bmw"></th>
+								<th><input type="checkbox" name="cars" id="mers" value="mers"></th>
+								<th><input type="checkbox" name="cars" id="porsh" value="porsh"></th>
+							</tr>
+					</th>
+					<th>
+						<table>
+							<tr>
+								<th><input type="checkbox" name="cars" id="tesl" value="tesl"></th>
+								<th><input type="checkbox" name="cars" id="toyota" value="toyota"></th>
+							</tr>
+						</table>
+					</th>
+
+			</table>
+			</tr>
+			</table>
+
+			<p>
+				<input type="image" alt="Click me!" src="img/html.png" width="80" height="30">
+
+            </p>
+
+				<p>
+					<input type="submit">
+            </p>
+		</form>
+	</main>
+
+	<footer>
+		<h2>Thanks, you are the best!</h2>
+		<h3>Your progres is:</h3>
+		<progress max="100" value="88">88/100</progress>
+	</footer>
 </body>
 
 </html>
