@@ -19,11 +19,73 @@
 		</nav>
 	</header>
 
-    <main>
-        <form method="POST" action="https://formspree.io/xwkpvnle">
-            
-        </form>
-    </main>
+	<main>
+		<h3>Fill a form</h3>
+		<form method="POST" action="https://formspree.io/xwkpvnle">
+			<p>
+				<label for="name">
+                   Name: <input type="text" name="name" id="name" placeholder="Name:" required autofocus>
+                </label>
+			</p>
+			<p>
+				<label for="mail">
+                    Emai: <input type="email" id="mail" placeholder="Email" required>
+                </label>
+			</p>
+
+			<h4>Select a gender</h4>
+			<label for="female">
+                    Female: <input type="radio" id="female">
+                </label>
+			<label for="male">
+                     Male: <input type="radio" id="male">
+                </label>
+			<label for="others">
+                    Others: <input type="radio" id="others">
+                </label>
+
+			<p>
+				<label for="tel">
+                Phone number:<input type="tel" id="tel" name="tel" placeholder="+3800000000000">
+                </label>
+			</p>
+			<p>
+				<label for="url">
+                Your site:<input type="url" id="url" name="url" placeholder="https://www.site.com">
+            </label>
+			</p>
+			<p>
+				
+                <label for="comments">
+                    Comments: <textarea  name="comments" id="comments" placeholder="Write your comments"></textarea>
+                </label>
+                
+			</p>
+			<p>
+				<label for="cars">
+                Select one of three cars:
+                    <select id="cars" name="cars">
+                        <option>Tesla</option>
+                        <option>Toyota</option>
+                        <option>BMW</option>
+                    </select>
+                </label>
+			</p>
+			<p>
+				<label for="agree">
+                    <input type="checkbox" name="checkbox" id="agree" required> I have read and agree with the Terms of Use.
+                </label>
+				<br>
+				<button type="submit">Submit me!</button>
+			</p>
+
+			<h6>If you want to reset all data, click buttom <i>bellow</i>.</h6>
+			<label for="reset">
+                <input type="reset" id="reset" value="This is a reset button!!!">
+            </label>
+
+		</form>
+	</main>
 </body>
 
 </html>
